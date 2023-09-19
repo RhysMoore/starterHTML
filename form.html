@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+
+<form method="GET" action="" name="form">
+    <!-- Input tags allow all kinds of inputs.
+         Label tags marry the text to the form field.
+         Important Attributes: name, id, type
+
+         Types: test, radio
+         -->
+    <label for="fName">First name:</label>
+    <input type="text" name="fName" id="fName" value="Enter First name"/><br />
+
+    <!-- Radio buttons rely on having the same name to represent the same selection.
+         The value attribute stores the data of the choice.
+         The id attribute is a unique identifier used for styling.
+    -->
+    Are you alive?
+    <label>Yes</label><input type="radio" name="alive" id="yes" value="yes">
+    <label>No</label><input type="radio" name="alive" id="no" value="no"><br /><br />
+
+    <!-- Checkboxes must have different names and id's. Unlike radio buttons
+         mutliple can be selected.
+    -->
+    Check all of the following that apply: <br />
+    <input type="checkbox" name="webDesign" value="Web Design" id="webDesign">
+    <label for="webDesign">Web Design</label><br />
+
+
+    <input type="checkbox" name="csp" value="Computer Science Principles" id="csp">
+    <label>Computer Science Principles</label><br />
+
+
+    <input type="checkbox" name="cybersecurity" value="Cybersecurity" id="cybersecurity">
+    <label for="cybersecurity">Cybersecurity</label><br /><br />
+
+    <!-- Submit buttons send form data to the action page to be processed -->
+    <input type="submit" value="Take my data!" />
+
+</form>
+
+</body>
+</html>
